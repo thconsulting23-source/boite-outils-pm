@@ -1,0 +1,212 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.wrap{padding:1.5rem 0 2rem}
+.hero{background:#1F3864;border-radius:16px;padding:2rem 2rem 1.5rem;margin-bottom:1.5rem;position:relative;overflow:hidden}
+.hero-accent{position:absolute;top:0;left:0;right:0;height:4px;background:#028090}
+.hero-label{font-size:11px;font-weight:500;letter-spacing:.12em;color:#5EEAD4;margin-bottom:.5rem}
+.hero-title{font-size:28px;font-weight:500;color:#fff;line-height:1.15;margin-bottom:.5rem;font-family:var(--font-voice)}
+.hero-sub{font-size:13px;color:#94A3B8;line-height:1.5;max-width:480px;margin-bottom:1.25rem}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:500}
+.pill-pm{background:#0F6E56;color:#9FE1CB}
+.pill-po{background:#3C3489;color:#CECBF6}
+.pill-coach{background:#634b06;color:#FAC775}
+.why-strip{display:flex;gap:1px;margin-bottom:1.5rem;border-radius:10px;overflow:hidden;border:0.5px solid var(--border)}
+.why-cell{flex:1;padding:1rem;background:var(--surface-2)}
+.why-cell+.why-cell{border-left:0.5px solid var(--border)}
+.why-icon{font-size:20px;margin-bottom:6px}
+.why-title{font-size:12px;font-weight:500;color:var(--text-primary);margin-bottom:3px}
+.why-text{font-size:11px;color:var(--text-secondary);line-height:1.4}
+.section-label{font-size:10px;font-weight:500;letter-spacing:.1em;color:var(--text-muted);margin-bottom:.75rem}
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.5rem}
+.tool{border-radius:12px;overflow:hidden;border:0.5px solid var(--border);background:var(--surface-2)}
+.tool-header{padding:14px 16px 10px;position:relative}
+.tool-num{position:absolute;top:14px;right:14px;font-size:11px;font-weight:500;color:rgba(255,255,255,.45)}
+.tool-icon{font-size:22px;margin-bottom:6px;display:block}
+.tool-name{font-size:15px;font-weight:500;color:#fff;margin-bottom:2px}
+.tool-tagline{font-size:11px;color:rgba(255,255,255,.6);line-height:1.3}
+.tool-body{padding:12px 16px 14px;background:var(--surface-2)}
+.tool-when{font-size:11px;font-weight:500;color:var(--text-secondary);margin-bottom:6px}
+.tool-bullets{display:flex;flex-direction:column;gap:5px}
+.tb{display:flex;align-items:flex-start;gap:7px;font-size:11px;color:var(--text-secondary);line-height:1.35}
+.tb-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.tool-footer{display:flex;align-items:center;justify-content:space-between;padding:8px 16px;border-top:0.5px solid var(--border)}
+.tf-dur{font-size:10px;color:var(--text-muted);display:flex;align-items:center;gap:4px}
+.tf-users{display:flex;gap:4px}
+.tf-badge{font-size:9px;font-weight:500;padding:2px 7px;border-radius:10px}
+.seq{display:flex;align-items:stretch;gap:0;margin-bottom:1.5rem;border-radius:10px;overflow:hidden;border:0.5px solid var(--border)}
+.seq-step{flex:1;padding:10px 12px;background:var(--surface-1);position:relative}
+.seq-step+.seq-step{border-left:0.5px solid var(--border)}
+.seq-step::after{content:"→";position:absolute;right:-10px;top:50%;transform:translateY(-50%);font-size:13px;color:var(--text-muted);z-index:1;background:var(--surface-1);padding:0 2px}
+.seq-step:last-child::after{content:""}
+.seq-n{font-size:10px;font-weight:500;color:var(--text-muted);margin-bottom:3px}
+.seq-t{font-size:11px;font-weight:500;color:var(--text-primary);margin-bottom:2px}
+.seq-s{font-size:10px;color:var(--text-secondary);line-height:1.3}
+.tip{padding:12px 16px;background:var(--surface-1);border-left:3px solid #028090;border-radius:0 8px 8px 0;font-size:12px;color:var(--text-secondary);line-height:1.5}
+.tip strong{color:var(--text-primary);font-weight:500}
+</style>
+
+<div class="wrap">
+<h2 class="sr-only">Boîte à outils coaching PM — présentation des 4 ateliers pour PM et PO</h2>
+
+<div class="hero">
+  <div class="hero-accent"></div>
+  <div class="hero-label">Coaching PM · Santé+</div>
+  <div class="hero-title">Boîte à outils<br>produit</div>
+  <div class="hero-sub">4 ateliers clés en main pour t'aider à passer d'une logique de livraison à une logique d'impact — utilisables seule ou avec ton équipe PO.</div>
+  <div class="pills">
+    <span class="pill pill-pm"><i class="ti ti-user" aria-hidden="true" style="font-size:11px"></i>Product Manager</span>
+    <span class="pill pill-po"><i class="ti ti-users" aria-hidden="true" style="font-size:11px"></i>Product Owner</span>
+    <span class="pill pill-coach"><i class="ti ti-compass" aria-hidden="true" style="font-size:11px"></i>Coach PM</span>
+  </div>
+</div>
+
+<div class="why-strip">
+  <div class="why-cell">
+    <div class="why-icon"><i class="ti ti-target" aria-hidden="true" style="color:#028090;font-size:20px"></i></div>
+    <div class="why-title">Pourquoi cette boîte à outils ?</div>
+    <div class="why-text">Pour relier chaque décision produit à un objectif business concret — et ne plus livrer des features sans savoir pourquoi.</div>
+  </div>
+  <div class="why-cell">
+    <div class="why-icon"><i class="ti ti-tool" aria-hidden="true" style="color:#D97706;font-size:20px"></i></div>
+    <div class="why-title">Clés en main</div>
+    <div class="why-text">Chaque atelier a un guide facilitateur, un template et un exemple ancré dans le contexte Santé+. Pas de théorie sans pratique.</div>
+  </div>
+  <div class="why-cell">
+    <div class="why-icon"><i class="ti ti-arrows-right-left" aria-hidden="true" style="color:#6D28D9;font-size:20px"></i></div>
+    <div class="why-title">Complémentaires</div>
+    <div class="why-text">Les outils s'enchaînent : l'Impact Map alimente la roadmap, la roadmap alimente la priorisation, la priorisation ancre les critères de succès.</div>
+  </div>
+</div>
+
+<div class="section-label">Les 4 ateliers</div>
+
+<div class="tools">
+
+  <div class="tool">
+    <div class="tool-header" style="background:#1F3864">
+      <span class="tool-num">01</span>
+      <i class="ti ti-map-2 tool-icon" aria-hidden="true"></i>
+      <div class="tool-name">Impact Mapping</div>
+      <div class="tool-tagline">Relier les initiatives aux objectifs business</div>
+    </div>
+    <div class="tool-body">
+      <div class="tool-when">Quand l'utiliser</div>
+      <div class="tool-bullets">
+        <div class="tb"><div class="tb-dot" style="background:#028090"></div>Cadrage d'un nouvel impact T4</div>
+        <div class="tb"><div class="tb-dot" style="background:#028090"></div>Quand on ne sait plus pourquoi on livre certaines features</div>
+        <div class="tb"><div class="tb-dot" style="background:#028090"></div>Pour aligner PM et PO sur la valeur attendue</div>
+      </div>
+    </div>
+    <div class="tool-footer">
+      <div class="tf-dur"><i class="ti ti-clock" aria-hidden="true" style="font-size:12px"></i>90 min</div>
+      <div class="tf-users">
+        <span class="tf-badge" style="background:#0F6E56;color:#9FE1CB">PM</span>
+        <span class="tf-badge" style="background:#3C3489;color:#CECBF6">PO</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool">
+    <div class="tool-header" style="background:#028090">
+      <span class="tool-num">02</span>
+      <i class="ti ti-checkbox tool-icon" aria-hidden="true"></i>
+      <div class="tool-name">Critères de succès</div>
+      <div class="tool-tagline">Définir ce que "réussir" veut dire</div>
+    </div>
+    <div class="tool-body">
+      <div class="tool-when">Quand l'utiliser</div>
+      <div class="tool-bullets">
+        <div class="tb"><div class="tb-dot" style="background:#1F3864"></div>Avant de lancer le développement d'une initiative</div>
+        <div class="tb"><div class="tb-dot" style="background:#1F3864"></div>Pour passer d'une logique de livraison à une logique d'impact</div>
+        <div class="tb"><div class="tb-dot" style="background:#1F3864"></div>Pour construire les métriques du dashboard produit</div>
+      </div>
+    </div>
+    <div class="tool-footer">
+      <div class="tf-dur"><i class="ti ti-clock" aria-hidden="true" style="font-size:12px"></i>60 min</div>
+      <div class="tf-users">
+        <span class="tf-badge" style="background:#0F6E56;color:#9FE1CB">PM</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool">
+    <div class="tool-header" style="background:#D97706">
+      <span class="tool-num">03</span>
+      <i class="ti ti-road tool-icon" aria-hidden="true"></i>
+      <div class="tool-name">Roadmap outcome-based</div>
+      <div class="tool-tagline">Construire une feuille de route orientée valeur</div>
+    </div>
+    <div class="tool-body">
+      <div class="tool-when">Quand l'utiliser</div>
+      <div class="tool-bullets">
+        <div class="tb"><div class="tb-dot" style="background:#D97706"></div>Quand la roadmap actuelle est une liste de features sans logique</div>
+        <div class="tb"><div class="tb-dot" style="background:#D97706"></div>Pour présenter la direction produit aux sponsors</div>
+        <div class="tb"><div class="tb-dot" style="background:#D97706"></div>Pour relier les initiatives T4 à des impacts mesurables</div>
+      </div>
+    </div>
+    <div class="tool-footer">
+      <div class="tf-dur"><i class="ti ti-clock" aria-hidden="true" style="font-size:12px"></i>90 min</div>
+      <div class="tf-users">
+        <span class="tf-badge" style="background:#0F6E56;color:#9FE1CB">PM</span>
+        <span class="tf-badge" style="background:#3C3489;color:#CECBF6">PO</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool">
+    <div class="tool-header" style="background:#6D28D9">
+      <span class="tool-num">04</span>
+      <i class="ti ti-adjustments-horizontal tool-icon" aria-hidden="true"></i>
+      <div class="tool-name">Priorisation</div>
+      <div class="tool-tagline">Choisir avec des critères explicites</div>
+    </div>
+    <div class="tool-body">
+      <div class="tool-when">Quand l'utiliser</div>
+      <div class="tool-bullets">
+        <div class="tb"><div class="tb-dot" style="background:#6D28D9"></div>Quand tout semble urgent et qu'il faut arbitrer</div>
+        <div class="tb"><div class="tb-dot" style="background:#6D28D9"></div>Pour justifier les décisions backlog face aux sponsors</div>
+        <div class="tb"><div class="tb-dot" style="background:#6D28D9"></div>Frameworks disponibles : MoSCoW · RICE · WSJF</div>
+      </div>
+    </div>
+    <div class="tool-footer">
+      <div class="tf-dur"><i class="ti ti-clock" aria-hidden="true" style="font-size:12px"></i>45 min</div>
+      <div class="tf-users">
+        <span class="tf-badge" style="background:#0F6E56;color:#9FE1CB">PM</span>
+        <span class="tf-badge" style="background:#3C3489;color:#CECBF6">PO</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="section-label">Comment les enchaîner</div>
+
+<div class="seq">
+  <div class="seq-step">
+    <div class="seq-n" style="color:#028090">01</div>
+    <div class="seq-t">Impact Map</div>
+    <div class="seq-s">Qui sont les acteurs ? Quels comportements changer ?</div>
+  </div>
+  <div class="seq-step">
+    <div class="seq-n" style="color:#1F3864">02</div>
+    <div class="seq-t">Critères de succès</div>
+    <div class="seq-s">Comment on saurait qu'on a réussi ?</div>
+  </div>
+  <div class="seq-step">
+    <div class="seq-n" style="color:#D97706">03</div>
+    <div class="seq-t">Roadmap</div>
+    <div class="seq-s">Dans quel ordre on avance ?</div>
+  </div>
+  <div class="seq-step">
+    <div class="seq-n" style="color:#6D28D9">04</div>
+    <div class="seq-t">Priorisation</div>
+    <div class="seq-s">Qu'est-ce qu'on ne fait pas ?</div>
+  </div>
+</div>
+
+<div class="tip">
+  <strong>Règle d'or de la boîte à outils</strong> — Commencer toujours par le POURQUOI (Impact Map) avant le QUOI (features). Un outil utilisé sans objectif clair produit des livrables sans valeur.
+</div>
+</div>
